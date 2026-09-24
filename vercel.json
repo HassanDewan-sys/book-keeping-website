@@ -1,12 +1,7 @@
 {
+  "version": 2,
   "functions": {
     "api/*.php": {
-      "runtime": "vercel-php@0.7.1"
-    },
-    "index.php": {
-      "runtime": "vercel-php@0.7.1"
-    },
-    "video-stream.php": {
       "runtime": "vercel-php@0.7.1"
     }
   },
@@ -24,12 +19,20 @@
       "dest": "/favicon.png"
     },
     {
+      "src": "/video-stream.php",
+      "dest": "/api/video-stream.php"
+    },
+    {
+      "src": "/api/contact.php",
+      "dest": "/api/contact.php"
+    },
+    {
       "src": "/api/(.*)",
       "dest": "/api/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/index.php"
+      "dest": "/api/index.php"
     }
   ]
 }
