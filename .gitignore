@@ -1,0 +1,17 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Database files
+data/*.sqlite
+data/*.db
+
+# Log files
+*.log
+error_log
+
+# Temporary or backup files
+*.bak
+*.tmp
+*.swp

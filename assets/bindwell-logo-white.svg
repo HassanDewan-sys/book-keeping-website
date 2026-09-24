@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="540" height="120">
+    <defs>
+        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#E2B170" />
+            <stop offset="50%" stop-color="#C98E5E" />
+            <stop offset="100%" stop-color="#9C6436" />
+        </linearGradient>
+    </defs>
+    <!-- Open Book Icon with Quill/Pen Centerpiece -->
+    <g transform="translate(10, 10)">
+        <!-- Left Book Page Wing -->
+        <path d="M 50 82 C 34 76, 12 76, 2 84 L 2 22 C 12 14, 34 14, 50 20 Z" fill="url(#goldGrad)" opacity="0.95" />
+        <path d="M 50 85 C 34 79, 12 79, 0 88 L 0 20 C 12 11, 34 11, 50 17 Z" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" />
+        
+        <!-- Right Book Page Wing -->
+        <path d="M 50 82 C 66 76, 88 76, 98 84 L 98 22 C 88 14, 66 14, 50 20 Z" fill="url(#goldGrad)" opacity="0.95" />
+        <path d="M 50 85 C 66 79, 88 79, 100 88 L 100 20 C 88 11, 66 11, 50 17 Z" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" />
+        
+        <!-- Center Quill & Nib -->
+        <path d="M 50 2 C 55 18, 64 36, 51 60 L 50 78 L 49 60 C 36 36, 45 18, 50 2 Z" fill="#FAF6F0" />
+        <path d="M 50 12 L 50 56" stroke="url(#goldGrad)" stroke-width="2" />
+        <!-- Nib Tip Ribbon -->
+        <polygon points="46,80 54,80 50,92" fill="url(#goldGrad)" />
+    </g>
+
+    <!-- Typography: BINDWELL PRESS -->
+    <!-- BINDWELL in bold luxury serif -->
+    <text x="140" y="66" font-family="'Fraunces', 'Cinzel', 'Playfair Display', Georgia, serif" font-size="52" font-weight="900" fill="#FAF6F0" letter-spacing="0.04em">BINDWELL</text>
+    <!-- PRESS in spaced gold serif -->
+    <text x="144" y="98" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800" fill="#C98E5E" letter-spacing="0.38em">PRESS</text>
+</svg>
