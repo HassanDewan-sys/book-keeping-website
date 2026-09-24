@@ -6245,6 +6245,11 @@ footer .footer-contact-box .block.font-body.text-\[11\.5px\].text-\[\#FAF6F0\]\/
     font-size: 12px !important;
 }
 
+#about {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
 @media (max-width: 768px) {
     .bwp-lightbox-overlay {
         padding: 0.75rem !important;
@@ -6373,6 +6378,59 @@ footer .footer-contact-box .block.font-body.text-\[11\.5px\].text-\[\#FAF6F0\]\/
         width: 100% !important;
         max-width: 90vw !important;
     }
+
+    .footer-subfooter-pill svg {
+        display: none !important;
+    }
+
+    #contact .fc-grid {
+        max-width: 90vw !important;
+    }
+
+    #contact .fc-grid .fc-photo-card-wrap {
+        width: 88vw;
+    }
+
+    #contact .fc-grid .fc-vertical-ribbon {
+        display: none !important;
+    }
+
+    #contact .fc-grid .fc-form-card {
+        width: 88vw;
+    }
+
+    #contact .fc-trust-pill {
+        display: none !important;
+    }
+
+    header#main-header .bwp-actions .btn-gold {
+        display: none !important;
+    }
+
+    #platforms .mt-8.border-t.border-\[\#E8DDD0\]\/60.pt-6.flex.flex-wrap.items-center.justify-center.gap-x-6.sm\:gap-x-8.gap-y-2\.5 {
+        gap: 20px !important;
+    }
+
+    #contact .fc-submit-btn {
+        font-size: 10px !important;
+    }
+}
+
+/* ----------------------------------------------------------------------
+   Anti-Theft & Content Protection Shield
+   ---------------------------------------------------------------------- */
+img, video, canvas, .woocommerce-product-image, .image-has-rotate, .ps-cover-img, .rotate-before-image {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    -webkit-user-drag: none !important;
+    -khtml-user-drag: none !important;
+    -moz-user-drag: none !important;
+    -o-user-drag: none !important;
+    user-drag: none !important;
+    -webkit-touch-callout: none !important;
+    pointer-events: auto;
 }
 
 

@@ -8,6 +8,7 @@ require_once __DIR__ . '/security.php';
 require_once __DIR__ . '/functions.php';
 
 send_security_headers();
+enforce_anti_scraper_shield();
 ?>
 <!DOCTYPE html>
 <html lang="en">

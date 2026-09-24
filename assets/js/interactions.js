@@ -1806,4 +1806,47 @@ document.addEventListener('DOMContentLoaded', () => {
         initShelf3D();
         initComeToLife3D();
     }
+
+    // ----------------------------------------------------------------------
+    // Global Anti-Theft & Asset Protection Shield
+    // ----------------------------------------------------------------------
+    (function initAntiTheftShield() {
+        // 1. Prevent Right-Click on Entire Page
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        }, { capture: true });
+
+        // 2. Prevent Drag & Drop of Images and Video Elements
+        document.addEventListener('dragstart', function(e) {
+            if (e.target && (e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO' || e.target.closest('img') || e.target.closest('.image-has-rotate'))) {
+                e.preventDefault();
+                return false;
+            }
+        }, { capture: true });
+
+        // 3. Block Keyboard Shortcuts (Save Page, View Source, DevTools)
+        document.addEventListener('keydown', function(e) {
+            // Block Ctrl+S / Cmd+S (Save Page)
+            if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S')) {
+                e.preventDefault();
+                return false;
+            }
+            // Block Ctrl+U / Cmd+U (View Page Source)
+            if ((e.ctrlKey || e.metaKey) && (e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+                return false;
+            }
+            // Block F12 (Inspect Element)
+            if (e.key === 'F12') {
+                e.preventDefault();
+                return false;
+            }
+            // Block Ctrl+Shift+I / J / C (DevTools Shortcuts)
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && ['I', 'i', 'J', 'j', 'C', 'c'].includes(e.key)) {
+                e.preventDefault();
+                return false;
+            }
+        }, { capture: true });
+    })();
 });

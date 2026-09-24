@@ -4,6 +4,7 @@
  * Reverse Engineered & Recreated Pixel-Accurate Functional Replica
  */
 
+define('BINDWELL_APP_INIT', true);
 require_once __DIR__ . '/config/config.php';
 require_once __DIR__ . '/includes/header.php';
 

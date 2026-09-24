@@ -91,6 +91,86 @@ function check_rate_limit(string $action = 'contact', int $maxAttempts = 5, int 
 }
 
 /**
+ * Block malicious bots, offline downloaders & web scrapers (HTTrack, Teleport, Wget, WebCopier, etc.)
+ */
+function enforce_anti_scraper_shield(): void {
+    if (php_sapi_name() === 'cli') {
+        return; // Allow CLI tasks / testing
+    }
+
+    $userAgent = strtolower($_SERVER['HTTP_USER_AGENT'] ?? '');
+
+    // 1. Block empty user-agent (signature of automated socket crawlers)
+    if (empty($userAgent)) {
+        http_response_code(403);
+        header('Content-Type: text/html; charset=utf-8');
+        exit('<!DOCTYPE html><html><head><meta charset="utf-8"><title>403 Forbidden</title></head><body style="background:#14070D;color:#FAF6F0;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;"><div style="background:rgba(255,255,255,0.05);padding:40px;border-radius:16px;border:1px solid rgba(201,142,94,0.4);max-width:500px;text-align:center;"><h1 style="color:#C98E5E;margin-bottom:10px;">403 Forbidden</h1><p>Access denied: Missing client identification.</p></div></body></html>');
+    }
+
+    // 2. High-risk Scraper, Website Copier & Exploit Tool Signatures
+    $bannedAgents = [
+        'httrack',
+        'wget',
+        'teleport',
+        'webcopier',
+        'offline explorer',
+        'webzip',
+        'sitesnagger',
+        'site-snagger',
+        'grafula',
+        'scrapy',
+        'blackwidow',
+        'stripper',
+        'sucker',
+        'ninja',
+        'clshttp',
+        'autohttp',
+        'extractorpro',
+        'pavuk',
+        'joc web spider',
+        'chinaclaw',
+        'custo',
+        'disco',
+        'go!zilla',
+        'grabnet',
+        'superbot',
+        'zeus',
+        'eirgrabber',
+        'emailcollector',
+        'emailsiphon',
+        'emailwolf',
+        'harvest',
+        'pagegrabber',
+        'nikto',
+        'sqlmap',
+        'acunetix',
+        'havij',
+        'dirbuster',
+        'masscan',
+        'zgrab',
+        'python-requests',
+        'libwww-perl',
+        'urllib'
+    ];
+
+    foreach ($bannedAgents as $badAgent) {
+        if (strpos($userAgent, $badAgent) !== false) {
+            http_response_code(403);
+            header('Content-Type: text/html; charset=utf-8');
+            exit('<!DOCTYPE html><html><head><meta charset="utf-8"><title>403 Forbidden - Security Shield</title><style>body{background:#14070D;color:#FAF6F0;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;text-align:center;}.box{background:rgba(255,255,255,0.05);padding:40px;border-radius:16px;border:1px solid rgba(201,142,94,0.4);max-width:500px;}h1{color:#C98E5E;margin-bottom:10px;}p{color:rgba(250,246,240,0.8);line-height:1.6;}</style></head><body><div class="box"><h1>403 Forbidden</h1><p>Automated downloading tools, site copiers, and scraping bots are strictly prohibited on this server.</p></div></body></html>');
+        }
+    }
+
+    // 3. Anti-burst Crawler Rate Limiter (Max 50 requests per 10 seconds per session/IP)
+    if (!check_rate_limit('crawler_burst_shield', 50, 10)) {
+        http_response_code(429);
+        header('Retry-After: 30');
+        header('Content-Type: text/html; charset=utf-8');
+        exit('<!DOCTYPE html><html><head><meta charset="utf-8"><title>429 Too Many Requests</title><style>body{background:#14070D;color:#FAF6F0;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;text-align:center;}.box{background:rgba(255,255,255,0.05);padding:40px;border-radius:16px;border:1px solid rgba(201,142,94,0.4);max-width:500px;}h1{color:#C98E5E;margin-bottom:10px;}p{color:rgba(250,246,240,0.8);line-height:1.6;}</style></head><body><div class="box"><h1>Too Many Requests</h1><p>High request frequency detected. Please wait a moment before continuing.</p></div></body></html>');
+    }
+}
+
+/**
  * Send security headers
  */
 function send_security_headers(): void {
@@ -99,5 +179,6 @@ function send_security_headers(): void {
         header('X-Frame-Options: SAMEORIGIN');
         header('X-XSS-Protection: 1; mode=block');
         header('Referrer-Policy: strict-origin-when-cross-origin');
+        header('Permissions-Policy: camera=(), microphone=(), geolocation=()');
     }
 }

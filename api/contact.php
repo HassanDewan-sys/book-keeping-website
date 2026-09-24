@@ -8,6 +8,7 @@ header('Content-Type: application/json; charset=utf-8');
 require_once __DIR__ . '/../config/config.php';
 require_once __DIR__ . '/../config/database.php';
 require_once __DIR__ . '/../includes/security.php';
+enforce_anti_scraper_shield();
 
 // Only allow POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {

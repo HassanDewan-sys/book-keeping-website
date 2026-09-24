@@ -3,6 +3,9 @@
  * High Performance HTTP 206 Partial Content Video Streaming Endpoint
  * Allows HTML5 video instant seeking and byte-range streaming
  */
+require_once __DIR__ . '/includes/security.php';
+enforce_anti_scraper_shield();
+
 $raw = $_GET['video'] ?? $_GET['file'] ?? $_GET['src'] ?? '';
 if (empty($raw) && isset($_GET['v']) && $_GET['v'] !== '2.0') {
     $raw = $_GET['v'];
