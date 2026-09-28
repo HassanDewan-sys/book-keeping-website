@@ -499,19 +499,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
         scene.add(ambientLight);
 
-        const dirLight1 = new THREE.DirectionalLight(0xfff7e6, 1.1);
+        const dirLight1 = new THREE.DirectionalLight(0xffffff, 1.1);
         dirLight1.position.set(4, 7, 6);
         scene.add(dirLight1);
 
-        const dirLight2 = new THREE.DirectionalLight(0xD4AF37, 0.65);
+        const dirLight2 = new THREE.DirectionalLight(0x4361EE, 0.65);
         dirLight2.position.set(-6, 3, 2);
         scene.add(dirLight2);
 
-        const pointLight1 = new THREE.PointLight(0x3B82F6, 0.35);
+        const pointLight1 = new THREE.PointLight(0x2B35AF, 0.35);
         pointLight1.position.set(0, -1, 5);
         scene.add(pointLight1);
 
-        const pointLight2 = new THREE.PointLight(0xD4AF37, 0.45);
+        const pointLight2 = new THREE.PointLight(0x4895EF, 0.45);
         pointLight2.position.set(5, 2, 1);
         scene.add(pointLight2);
 
@@ -521,9 +521,9 @@ document.addEventListener('DOMContentLoaded', () => {
         shadowCanvas.height = 128;
         const sCtx = shadowCanvas.getContext('2d');
         const sGrad = sCtx.createRadialGradient(64, 64, 0, 64, 64, 64);
-        sGrad.addColorStop(0, 'rgba(8, 12, 22, 0.45)');
-        sGrad.addColorStop(0.6, 'rgba(8, 12, 22, 0.15)');
-        sGrad.addColorStop(1, 'rgba(8, 12, 22, 0)');
+        sGrad.addColorStop(0, 'rgba(18, 8, 111, 0.45)');
+        sGrad.addColorStop(0.6, 'rgba(43, 53, 175, 0.15)');
+        sGrad.addColorStop(1, 'rgba(18, 8, 111, 0)');
         sCtx.fillStyle = sGrad;
         sCtx.fillRect(0, 0, 128, 128);
         const shadowTex = new THREE.CanvasTexture(shadowCanvas);
@@ -545,7 +545,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         particleGeo.setAttribute('position', new THREE.BufferAttribute(particleCoords, 3));
         const particleMat = new THREE.PointsMaterial({
-            color: 0xF3E5AB,
+            color: 0x4895EF,
             size: 0.045,
             transparent: true,
             opacity: 0.8,
@@ -727,21 +727,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // --- Studio Lighting Setup ---
-        const ambientLight = new THREE.AmbientLight(0xfff8ee, 1.15);
+        const ambientLight = new THREE.AmbientLight(0xffffff, 1.15);
         scene.add(ambientLight);
 
-        // Warm front key light
+        // Crisp front key light
         const keyLight = new THREE.DirectionalLight(0xffffff, 1.1);
         keyLight.position.set(4, 7, 8);
         scene.add(keyLight);
 
-        // Gold rim / fill light
-        const goldFillLight = new THREE.DirectionalLight(0xC98E5E, 0.75);
-        goldFillLight.position.set(-6, 4, 4);
-        scene.add(goldFillLight);
+        // Corporate Blue rim / fill light
+        const blueFillLight = new THREE.DirectionalLight(0x4361EE, 0.65);
+        blueFillLight.position.set(-6, 4, 4);
+        scene.add(blueFillLight);
 
-        // Soft center top glow
-        const topSpot = new THREE.PointLight(0xDFB28C, 0.8, 25);
+        // Soft center top glow (Sky Blue)
+        const topSpot = new THREE.PointLight(0x4895EF, 0.75, 25);
         topSpot.position.set(0, 5, 4);
         scene.add(topSpot);
 
@@ -750,12 +750,12 @@ document.addEventListener('DOMContentLoaded', () => {
         let radius = width < 768 ? 4.2 : 5.8;
         const step = (2 * Math.PI) / count;
 
-        // Floor circular glow ring
+        // Floor circular glow ring (Corporate Blue)
         const ringGeo = new THREE.RingGeometry(radius - 0.75, radius + 0.75, 64);
         const ringMat = new THREE.MeshBasicMaterial({
-            color: 0xC98E5E,
+            color: 0x2B35AF,
             transparent: true,
-            opacity: 0.28,
+            opacity: 0.22,
             side: THREE.DoubleSide,
             depthWrite: false
         });
@@ -770,10 +770,10 @@ document.addEventListener('DOMContentLoaded', () => {
         shadowCanvas.height = 256;
         const sCtx = shadowCanvas.getContext('2d');
         const sGrad = sCtx.createRadialGradient(128, 128, 30, 128, 128, 128);
-        sGrad.addColorStop(0, 'rgba(20, 7, 13, 0.35)');
-        sGrad.addColorStop(0.5, 'rgba(201, 142, 94, 0.12)');
-        sGrad.addColorStop(0.8, 'rgba(20, 7, 13, 0.05)');
-        sGrad.addColorStop(1, 'rgba(20, 7, 13, 0)');
+        sGrad.addColorStop(0, 'rgba(18, 8, 111, 0.35)');
+        sGrad.addColorStop(0.5, 'rgba(43, 53, 175, 0.15)');
+        sGrad.addColorStop(0.8, 'rgba(18, 8, 111, 0.05)');
+        sGrad.addColorStop(1, 'rgba(18, 8, 111, 0)');
         sCtx.fillStyle = sGrad;
         sCtx.fillRect(0, 0, 256, 256);
         const shadowTex = new THREE.CanvasTexture(shadowCanvas);
@@ -800,8 +800,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Index 3 (-Y): Bottom Pages
         // Index 4 (+Z): Front Cover
         // Index 5 (-Z): Back Cover
-        const spineMat = new THREE.MeshStandardMaterial({ color: 0x14070D, roughness: 0.5, metalness: 0.12 });
-        const pagesMat = new THREE.MeshStandardMaterial({ color: 0xFAF6F0, roughness: 0.8, metalness: 0.02 });
+        const spineMat = new THREE.MeshStandardMaterial({ color: 0x12086F, roughness: 0.5, metalness: 0.12 });
+        const pagesMat = new THREE.MeshStandardMaterial({ color: 0xF5F7FC, roughness: 0.8, metalness: 0.02 });
 
         let loadedCount = 0;
 
@@ -1102,15 +1102,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const ambientLight = new THREE.AmbientLight(0xffffff, 0.85);
         scene.add(ambientLight);
 
-        const dirLight1 = new THREE.DirectionalLight(0xfff7e6, 1.1);
+        const dirLight1 = new THREE.DirectionalLight(0xffffff, 1.1);
         dirLight1.position.set(4, 6, 6);
         scene.add(dirLight1);
 
-        const dirLight2 = new THREE.DirectionalLight(0xD4AF37, 0.55);
+        const dirLight2 = new THREE.DirectionalLight(0x4361EE, 0.55);
         dirLight2.position.set(-5, 2, 3);
         scene.add(dirLight2);
 
-        const pointLight = new THREE.PointLight(0xD4AF37, 0.45);
+        const pointLight = new THREE.PointLight(0x4895EF, 0.45);
         pointLight.position.set(0, -2, 4);
         scene.add(pointLight);
 

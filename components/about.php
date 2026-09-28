@@ -6,7 +6,6 @@
 ?>
 <section id="about" class="relative overflow-hidden py-24 sm:py-32 bg-cover bg-center" style="background-image: url('<?= asset_url('/assets/who-we-bg.avif') ?>');">
     <!-- Ambient Warm Tone Overlay -->
-    <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-cream/95 via-cream/80 to-transparent"></div>
 
     <div class="container-px relative z-10 grid items-center gap-12 lg:grid-cols-12">
         <!-- Left Content Column (Spans 7 cols) -->

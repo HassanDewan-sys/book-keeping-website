@@ -4654,9 +4654,9 @@ html.lenis, html.lenis body {
     width: 100%;
     height: 600px;
     border-radius: 0px !important;
-    background: radial-gradient(circle at 50% 65%, rgba(255, 255, 255, 0.95) 0%, rgba(246, 238, 228, 0.6) 60%, rgba(237, 242, 255, 0.25) 100%);
-    border: 1.5px solid rgba(255, 255, 255, 0.95);
-    box-shadow: 0 24px 60px -15px rgba(18, 8, 111, 0.08), 0 0 0 1px rgba(43, 53, 175, 0.15);
+    background: radial-gradient(circle at 50% 65%, #FFFFFF 0%, #EDF2FF 55%, rgba(217, 226, 242, 0.45) 85%, #F5F7FC 100%);
+    border: 1.5px solid #D9E2F2;
+    box-shadow: 0 24px 60px -15px rgba(18, 8, 111, 0.08), 0 0 0 1px rgba(43, 53, 175, 0.12);
     overflow: hidden;
     cursor: grab;
     user-select: none;
@@ -6616,6 +6616,97 @@ img, video, canvas, .woocommerce-product-image, .image-has-rotate, .ps-cover-img
     --tw-shadow-color: #2B35AF !important;
 }
 
+/* ==========================================================================
+   USER CUSTOM DESIGN REFINEMENTS (INSPECT ELEMENT TWEAKS)
+   ========================================================================== */
+.btn-gold {
+    color: #fff !important;
+}
 
+.bg-gold, .bg-gold-50, .bg-gold\/10, .bg-gold\/15, .bg-gold\/20, .bg-gold\/25 {
+    background-color: #edf2ff7d !important;
+}
 
+.bg-gradient-to-r {
+    background: linear-gradient(135deg, #EDF2FF 0%, #2B35AF 50%, #2B35AF 100%) !important;
+}
 
+.bg-gradient-to-l {
+    background: linear-gradient(-135deg, #EDF2FF 0%, #2B35AF 50%, #2B35AF 100%) !important;
+}
+
+section.relative.overflow-hidden.bg-royal-gradient.py-20.text-cream.sm\:py-24.bwp-reveal.is-revealed .eyebrow.eyebrow-light {
+    color: #fff !important;
+}
+
+#come-to-life .eyebrow {
+    color: #fff !important;
+}
+
+.shadow-royal {
+    --tw-shadow: 0 24px 60px -20px rgb(21 11 112 / 42%);
+    --tw-shadow-colored: 0 24px 60px -20px rgb(21 11 112 / 42%);
+}
+
+.hover\:shadow-float:hover {
+    --tw-shadow: 0 40px 90px -30px rgb(21 11 112 / 40%);
+    --tw-shadow-colored: 0 40px 90px -30px rgb(21 11 112 / 40%);
+}
+
+#showcase {
+    background: #ff000000 !important;
+}
+
+.ps-filter-btn.is-active {
+    color: #fff !important;
+}
+
+.ba-stat-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgb(43 53 175 / 13%) 100%);
+}
+
+.accordion-item.is-open .accordion-icon {
+    color: #fff !important;
+}
+
+.accordion-item.is-open .accordion-icon svg {
+    filter: brightness(0) invert(1);
+}
+
+.footer-btn-primary {
+    color: #fff !important;
+}
+
+.steps-icon-badge {
+    box-shadow: 0 4px 12px rgb(68 101 239 / 67%);
+}
+
+.bf-medallion {
+    border: 2px solid rgb(4 25 103 / 49%);
+}
+
+.mockup-bottom-badge #free-mockup-counter {
+    color: #ffffff !important;
+}
+
+.fc-form-card {
+    box-shadow: 0 30px 80px rgba(43, 53, 175, 0.22), 0 0 50px rgb(62 117 218 / 39%), inset 0 2px 4px #FFFFFF;
+}
+
+#free-mockup ul li span svg {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+}
+
+#free-mockup ul li span svg[fill="currentColor"] {
+    fill: #ffffff !important;
+}
+
+.shadow-float {
+    --tw-shadow: 0 40px 90px -30px rgb(43 53 175 / 46%);
+    --tw-shadow-colored: 0 40px 90px -30px rgb(43 53 175 / 46%);
+}
+
+.author-video-box, .author-video-card.is-active-card .author-video-box , .author-metric-badge {
+    box-shadow: 0 0 38px 8px rgb(43 98 223 / 20%), 0 0 70px 18px rgb(43 53 175 / 22%), 0 30px 65px -10px rgba(18, 8, 111, 0.28) !important;
+}

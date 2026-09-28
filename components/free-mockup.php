@@ -3,7 +3,7 @@
  * Free Mockup & Cover Audit CTA Component
  */
 ?>
-<section class="bg-cream py-20 sm:py-24">
+<section id="free-mockup" class="bg-cream py-20 sm:py-24">
     <div class="container-px">
         <div class="relative overflow-hidden rounded-none border border-gold-200 bg-gradient-to-br from-[#4895EF]-50 via-white to-cream p-8 shadow-float sm:p-12">
             <div class="pointer-events-none absolute -right-10 -top-10 h-48 w-48 rounded-none bg-gold/15 blur-3xl"></div>
@@ -20,22 +20,22 @@
 
                     <ul class="mt-7 grid gap-4 sm:grid-cols-3">
                         <li class="rounded-none border border-gold-100 bg-white/70 p-4 transition duration-300 hover:bg-white hover:shadow-card">
-                            <span class="flex h-10 w-10 items-center justify-center rounded-none bg-gold-gradient text-royal-900 shadow-none">
-                                <?= get_icon('sparkle', 'w-5 h-5') ?>
+                            <span class="flex h-10 w-10 items-center justify-center rounded-none bg-gold-gradient text-white shadow-none">
+                                <?= get_icon('sparkle', 'w-5 h-5 text-white') ?>
                             </span>
                             <p class="mt-3 font-display text-sm font-semibold text-royal-700">Free eBook Cover Mockup</p>
                             <p class="mt-1 font-body text-xs leading-relaxed text-ink/60">A 3D mockup of your title on a Kindle, yours to keep and share.</p>
                         </li>
                         <li class="rounded-none border border-gold-100 bg-white/70 p-4 transition duration-300 hover:bg-white hover:shadow-card">
-                            <span class="flex h-10 w-10 items-center justify-center rounded-none bg-gold-gradient text-royal-900 shadow-none">
-                                <?= get_icon('shield-check', 'w-5 h-5') ?>
+                            <span class="flex h-10 w-10 items-center justify-center rounded-none bg-gold-gradient text-white shadow-none">
+                                <?= get_icon('shield-check', 'w-5 h-5 text-white') ?>
                             </span>
                             <p class="mt-3 font-display text-sm font-semibold text-royal-700">Free Cover Audit</p>
                             <p class="mt-1 font-body text-xs leading-relaxed text-ink/60">An honest, expert critique of your current cover and how to make it sell.</p>
                         </li>
                         <li class="rounded-none border border-gold-100 bg-white/70 p-4 transition duration-300 hover:bg-white hover:shadow-card">
-                            <span class="flex h-10 w-10 items-center justify-center rounded-none bg-gold-gradient text-royal-900 shadow-none">
-                                <?= get_icon('star', 'w-5 h-5') ?>
+                            <span class="flex h-10 w-10 items-center justify-center rounded-none bg-gold-gradient text-white shadow-none">
+                                <?= get_icon('star', 'w-5 h-5 text-white') ?>
                             </span>
                             <p class="mt-3 font-display text-sm font-semibold text-royal-700">Exclusive New-Author Discount</p>
                             <p class="mt-1 font-body text-xs leading-relaxed text-ink/60">Claim a limited launch discount when you book your free consultation.</p>

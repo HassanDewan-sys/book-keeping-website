@@ -35,24 +35,7 @@ $faqs = require __DIR__ . '/../data/faqs.php';
                 </div>
 
                 <!-- Editorial Visual Frame -->
-                <div class="relative overflow-hidden rounded-none p-2 shadow-xl" style="background: rgba(255, 255, 255, 0.8); border: 2px solid rgba(255, 255, 255, 0.95); box-shadow: 0 20px 50px rgba(180, 140, 110, 0.15);">
-                    <div class="relative aspect-[4/3] rounded-none overflow-hidden bg-[#12086F]">
-                        <img src="<?= asset_url('assets/footer-background.avif') ?>" alt="Author Library & Literary Consultation" class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#12086F]/80 via-transparent to-transparent"></div>
-
-                        <!-- Floating Stat Badge inside Photo -->
-                        <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between p-3.5 rounded-none backdrop-blur-md" style="background: rgba(18, 8, 111, 0.75); border: 1px solid rgba(67, 97, 238, 0.35);">
-                            <div>
-                                <span class="block font-syne text-[10px] font-bold uppercase tracking-wider text-[#EDF2FF]">Average Response Time</span>
-                                <span class="block font-display text-sm font-semibold text-[#F5F7FC]">&lt; 24 Hours</span>
-                            </div>
-                            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#EDF2FF]">
-                                <span class="h-2 w-2 rounded-none bg-emerald-400 animate-ping"></span>
-                                Online Now
-                            </span>
-                        </div>
-                    </div>
-                </div>
+                
 
                 <!-- Direct Help Card -->
                 <div class="rounded-none p-6 backdrop-blur-md transition-all duration-300 hover:shadow-lg" style="background: rgba(255, 255, 255, 0.85); border: 1px solid rgba(217, 226, 242, 0.8); box-shadow: 0 10px 30px rgba(180, 140, 110, 0.08);">

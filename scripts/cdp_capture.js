@@ -148,7 +148,31 @@ async function run() {
         fs.writeFileSync(path.join(artifactsDir, 'verified_mobile_390.png'), Buffer.from(shot.data, 'base64'));
         console.log('Saved verified_mobile_390.png');
 
-        // 5. Scroll down to Packages and Footer
+        // 5. Scroll down to Covers In Motion 3D carousel
+        await client.send('Emulation.setDeviceMetricsOverride', {
+            width: 1440,
+            height: 900,
+            deviceScaleFactor: 1,
+            mobile: false
+        });
+        await client.send('Runtime.evaluate', {
+            expression: `document.getElementById('covers-motion')?.scrollIntoView({ behavior: 'instant' });`
+        });
+        await new Promise(r => setTimeout(r, 1200));
+        shot = await client.send('Page.captureScreenshot', { format: 'png' });
+        fs.writeFileSync(path.join(artifactsDir, 'verified_covers_motion.png'), Buffer.from(shot.data, 'base64'));
+        console.log('Saved verified_covers_motion.png');
+
+        // Free Mockup section
+        await client.send('Runtime.evaluate', {
+            expression: `document.getElementById('free-mockup')?.scrollIntoView({ behavior: 'instant' });`
+        });
+        await new Promise(r => setTimeout(r, 800));
+        shot = await client.send('Page.captureScreenshot', { format: 'png' });
+        fs.writeFileSync(path.join(artifactsDir, 'verified_free_mockup.png'), Buffer.from(shot.data, 'base64'));
+        console.log('Saved verified_free_mockup.png');
+
+        // 6. Scroll down to Packages and Footer
         await client.send('Runtime.evaluate', {
             expression: `document.getElementById('packages')?.scrollIntoView({ behavior: 'instant' });`
         });

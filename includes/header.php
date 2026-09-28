@@ -23,9 +23,9 @@ enforce_anti_scraper_shield();
     <link rel="canonical" href="<?= e(SITE_URL) ?>/">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="<?= asset_url('/assets/favicos.png') ?>">
-    <link rel="icon" href="<?= asset_url('/assets/favicos.png') ?>" type="image/png">
-    <link rel="apple-touch-icon" href="<?= asset_url('/assets/favicos.png') ?>">
+    <link rel="shortcut icon" href="<?= asset_url('/favicon.png') ?>">
+    <link rel="icon" href="<?= asset_url('/favicon.png') ?>" type="image/png">
+    <link rel="apple-touch-icon" href="<?= asset_url('/favicon.png') ?>">
 
     <!-- Preload Critical Media -->
     <link rel="preload" as="image" href="<?= asset_url('/assets/bindwell-logo.svg') ?>">
