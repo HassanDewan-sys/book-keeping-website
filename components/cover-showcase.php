@@ -23,11 +23,11 @@ $categories = ['All', 'Fantasy', 'Thriller', 'Romance', 'Sci-Fi', 'Mystery', 'Bi
                 Covers That <span class="ps-heading-gold">Sell</span>
             </h2>
             <div class="mx-auto mt-5 mb-5 flex items-center justify-center gap-2.5">
-                <span class="h-[3px] w-8 rounded-full bg-gradient-to-r from-transparent to-gold"></span>
-                <span class="h-2.5 w-2.5 -skew-x-12 rounded-[3px] bg-gold-gradient shadow-gold"></span>
-                <span class="h-[3px] w-16 rounded-full bg-gold-gradient"></span>
-                <span class="h-2.5 w-2.5 -skew-x-12 rounded-[3px] bg-gold-gradient shadow-gold"></span>
-                <span class="h-[3px] w-8 rounded-full bg-gradient-to-l from-transparent to-gold"></span>
+                <span class="h-[3px] w-8 rounded-none bg-gradient-to-r from-transparent to-[#2B35AF]"></span>
+                <span class="h-2.5 w-2.5 -skew-x-12 rounded-none bg-gold-gradient shadow-none"></span>
+                <span class="h-[3px] w-16 rounded-none bg-gold-gradient"></span>
+                <span class="h-2.5 w-2.5 -skew-x-12 rounded-none bg-gold-gradient shadow-none"></span>
+                <span class="h-[3px] w-8 rounded-none bg-gradient-to-l from-transparent to-[#2B35AF]"></span>
             </div>
             <p class="ps-desc">
                 A curated selection of our custom book covers across all genres. Filter by category or tap any cover for an enlarged high-definition view.

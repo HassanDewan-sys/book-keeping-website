@@ -60,28 +60,28 @@ $regions = [
 ];
 ?>
 <section id="distribution" class="relative overflow-hidden bg-royal-gradient py-24 text-cream sm:py-28">
-    <div class="pointer-events-none absolute -right-24 top-0 h-96 w-96 rounded-full bg-[#D4AF37]/10 blur-3xl"></div>
-    <div class="pointer-events-none absolute -left-24 bottom-0 h-96 w-96 rounded-full bg-indigo-900/15 blur-3xl"></div>
+    <div class="pointer-events-none absolute -right-24 top-0 h-96 w-96 rounded-none bg-[#4361EE]/10 blur-3xl"></div>
+    <div class="pointer-events-none absolute -left-24 bottom-0 h-96 w-96 rounded-none bg-indigo-900/15 blur-3xl"></div>
 
     <div class="container-px relative">
         <!-- Section Header -->
         <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
             <div>
-                <span class="eyebrow !border-[#D4AF37]/30 !bg-white/5 !text-[#F3E5AB]">
-                    <?= get_icon('sparkle', 'shrink-0 text-[#ECC870]') ?>
+                <span class="eyebrow !border-[#4361EE]/30 !bg-white/5 !text-[#EDF2FF]">
+                    <?= get_icon('sparkle', 'shrink-0 text-[#4895EF]') ?>
                     <span>Worldwide Retail Footprint</span>
                 </span>
                 <h2 class="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-[2.75rem]">
                     Every Major Bookstore. <br><span class="text-gradient-gold">Every High-Street Shelf.</span>
                 </h2>
             </div>
-            <div class="flex items-center gap-3 rounded-2xl border border-white/15 bg-white/[0.07] px-4 py-3 backdrop-blur-md">
+            <div class="flex items-center gap-3 rounded-none border border-white/15 bg-white/[0.07] px-4 py-3 backdrop-blur-md">
                 <span class="relative flex h-3 w-3">
-                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#D4AF37] opacity-75"></span>
-                    <span class="relative inline-flex h-3 w-3 rounded-full bg-[#D4AF37]"></span>
+                    <span class="absolute inline-flex h-full w-full animate-ping rounded-none bg-[#4361EE] opacity-75"></span>
+                    <span class="relative inline-flex h-3 w-3 rounded-none bg-[#4361EE]"></span>
                 </span>
                 <span class="font-body text-xs font-semibold text-cream/90">
-                    <strong class="text-[#F3E5AB]">40,000+ Retail Endpoints</strong> Live Across 190 Countries
+                    <strong class="text-[#EDF2FF]">40,000+ Retail Endpoints</strong> Live Across 190 Countries
                 </span>
             </div>
         </div>
@@ -89,7 +89,7 @@ $regions = [
         <!-- Region Selector Tabs -->
         <div class="mt-12 flex flex-wrap gap-2.5 border-b border-white/10 pb-6">
             <?php $first = true; foreach ($regions as $key => $region): ?>
-                <button type="button" class="dist-tab-btn flex items-center gap-2.5 rounded-full px-5 py-2.5 font-body text-xs font-bold tracking-wide transition-all <?= $first ? 'bg-[#D4AF37] text-slate-950 shadow-[0_4px_15px_rgba(212,175,55,0.4)]' : 'bg-white/10 text-cream/80 hover:bg-white/20 hover:text-white' ?>" data-region="<?= e($key) ?>">
+                <button type="button" class="dist-tab-btn flex items-center gap-2.5 rounded-none px-5 py-2.5 font-body text-xs font-bold tracking-wide transition-all <?= $first ? 'bg-[#4361EE] text-slate-950 shadow-[0_4px_15px_rgba(67, 97, 238,0.4)]' : 'bg-white/10 text-cream/80 hover:bg-white/20 hover:text-white' ?>" data-region="<?= e($key) ?>">
                     <span><?= e($region['flag']) ?></span>
                     <span><?= e($region['name']) ?></span>
                 </button>
@@ -101,23 +101,23 @@ $regions = [
             <?php $first = true; foreach ($regions as $key => $region): ?>
                 <div id="dist-panel-<?= e($key) ?>" class="dist-panel <?= $first ? 'block' : 'hidden' ?> transition-opacity duration-300">
                     <div class="mb-6 flex items-center justify-between text-xs text-cream/70">
-                        <span>Showing verified distribution partners for <strong class="text-[#F3E5AB]"><?= e($region['name']) ?></strong></span>
-                        <span class="rounded-lg border border-white/10 bg-white/10 px-3 py-1 font-mono text-cream/90"><?= e($region['endpoints']) ?></span>
+                        <span>Showing verified distribution partners for <strong class="text-[#EDF2FF]"><?= e($region['name']) ?></strong></span>
+                        <span class="rounded-none border border-white/10 bg-white/10 px-3 py-1 font-mono text-cream/90"><?= e($region['endpoints']) ?></span>
                     </div>
 
                     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                         <?php foreach ($region['retailers'] as $retailer): ?>
-                            <div class="group rounded-2xl border border-white/10 bg-white/[0.06] p-5 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/50 hover:bg-white/[0.1] hover:shadow-[0_15px_30px_rgba(0,0,0,0.3)]">
+                            <div class="group rounded-none border border-white/10 bg-white/[0.06] p-5 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-[#4361EE]/50 hover:bg-white/[0.1] hover:shadow-[0_15px_30px_rgba(0,0,0,0.3)]">
                                 <div class="flex items-center justify-between">
-                                    <h3 class="font-display text-base font-bold text-white group-hover:text-[#F3E5AB] transition-colors"><?= e($retailer['name']) ?></h3>
-                                    <span class="text-xs text-[#D4AF37] opacity-0 transition-opacity group-hover:opacity-100">
+                                    <h3 class="font-display text-base font-bold text-white group-hover:text-[#EDF2FF] transition-colors"><?= e($retailer['name']) ?></h3>
+                                    <span class="text-xs text-[#4361EE] opacity-0 transition-opacity group-hover:opacity-100">
                                         <?= get_icon('shield-check', 'shrink-0') ?>
                                     </span>
                                 </div>
                                 <p class="mt-2 font-body text-xs text-cream/70"><?= e($retailer['reach']) ?></p>
                                 <div class="mt-4 flex items-center justify-between border-t border-white/10 pt-3">
-                                    <span class="rounded bg-white/10 px-2 py-0.5 font-mono text-[10px] text-cream/80"><?= e($retailer['type']) ?></span>
-                                    <span class="font-body text-[11px] font-semibold text-[#ECC870]">Direct Feed</span>
+                                    <span class="rounded-none bg-white/10 px-2 py-0.5 font-mono text-[10px] text-cream/80"><?= e($retailer['type']) ?></span>
+                                    <span class="font-body text-[11px] font-semibold text-[#4895EF]">Direct Feed</span>
                                 </div>
                             </div>
                         <?php endforeach; ?>
@@ -127,7 +127,7 @@ $regions = [
         </div>
 
         <!-- Bottom Distribution Guarantee Banner -->
-        <div class="mt-14 flex flex-col items-center justify-between gap-6 rounded-2xl border border-[#D4AF37]/30 bg-gradient-to-r from-white/[0.04] via-[#D4AF37]/[0.1] to-white/[0.04] p-6 text-center backdrop-blur-xl sm:flex-row sm:text-left">
+        <div class="mt-14 flex flex-col items-center justify-between gap-6 rounded-none border border-[#4361EE]/30 bg-gradient-to-r from-white/[0.04] via-[#4361EE]/[0.1] to-white/[0.04] p-6 text-center backdrop-blur-xl sm:flex-row sm:text-left">
             <div>
                 <h4 class="font-display text-lg font-bold text-white">Want your book in the global catalog?</h4>
                 <p class="mt-1 font-body text-xs text-cream/70">Every package includes international ISBNs, barcode generation, and worldwide metadata syndication.</p>

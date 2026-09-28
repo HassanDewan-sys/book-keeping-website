@@ -4,8 +4,8 @@
  */
 ?>
 <section class="relative overflow-hidden bg-royal-gradient py-20 text-cream sm:py-24">
-    <div class="pointer-events-none absolute -left-24 top-1/2 h-80 w-80 -translate-y-1/2 rounded-full bg-gold/15 blur-3xl"></div>
-    <div class="pointer-events-none absolute -right-24 top-1/2 h-80 w-80 -translate-y-1/2 rounded-full bg-ruby-jewel/25 blur-3xl"></div>
+    <div class="pointer-events-none absolute -left-24 top-1/2 h-80 w-80 -translate-y-1/2 rounded-none bg-gold/15 blur-3xl"></div>
+    <div class="pointer-events-none absolute -right-24 top-1/2 h-80 w-80 -translate-y-1/2 rounded-none bg-ruby-jewel/25 blur-3xl"></div>
 
     <div class="container-px relative text-center">
         <div class="reveal-init">
@@ -22,7 +22,7 @@
                     <?= get_icon('arrow-right', 'shrink-0') ?>
                 </a>
                 <a href="tel:<?= e(SITE_PHONE_RAW) ?>" class="flex items-center gap-3 font-body text-cream/85 transition hover:text-gold-300">
-                    <span class="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/5">
+                    <span class="flex h-12 w-12 items-center justify-center rounded-none border border-white/20 bg-white/5">
                         <?= get_icon('phone', 'shrink-0 text-gold-300 w-5 h-5') ?>
                     </span>
                     <span class="text-left">

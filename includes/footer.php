@@ -11,25 +11,25 @@ require_once __DIR__ . '/functions.php';
     </main>
 
     <!-- Site Footer -->
-    <footer class="relative overflow-hidden pt-16 pb-12 sm:pt-20 sm:pb-16" style="background: #11040A url('<?= asset_url('assets/footer-background.avif') ?>') center center / cover no-repeat; color: #FAF6F0;">
+    <footer class="relative overflow-hidden pt-16 pb-12 sm:pt-20 sm:pb-16" style="background: #12086F url('<?= asset_url('assets/footer-background.avif') ?>') center center / cover no-repeat; color: #F5F7FC;">
         <!-- Soft Ambient Vignette (Keeps the antique books on left, globe on right clearly visible) -->
-        <div class="pointer-events-none absolute inset-0" style="background: radial-gradient(circle at 50% 50%, rgba(20, 6, 14, 0.05) 0%, rgba(14, 4, 10, 0.42) 100%);"></div>
+        <div class="pointer-events-none absolute inset-0" style="background: radial-gradient(circle at 50% 50%, rgba(18, 8, 111, 0.05) 0%, rgba(18, 8, 111, 0.42) 100%);"></div>
 
         <div class="footer-luxury-container">
             
             <!-- 1. Top Floating Glass CTA Banner -->
             <div class="footer-cta-card">
                 <div class="flex items-center justify-center gap-3">
-                    <span class="w-8 h-[1px] inline-block" style="background: rgba(201, 142, 94, 0.6);"></span>
-                    <span class="font-syne text-[11px] font-bold uppercase tracking-[0.25em] text-[#EED3BE]">LET'S BRING YOUR STORY TO THE WORLD</span>
-                    <span class="w-8 h-[1px] inline-block" style="background: rgba(201, 142, 94, 0.6);"></span>
+                    <span class="w-8 h-[1px] inline-block" style="background: rgba(43, 53, 175, 0.6);"></span>
+                    <span class="font-syne text-[11px] font-bold uppercase tracking-[0.25em] text-[#EDF2FF]">LET'S BRING YOUR STORY TO THE WORLD</span>
+                    <span class="w-8 h-[1px] inline-block" style="background: rgba(43, 53, 175, 0.6);"></span>
                 </div>
 
-                <h3 class="mt-3.5 font-display text-2xl sm:text-3xl lg:text-[2.65rem] font-bold text-[#FAF6F0] tracking-tight leading-tight" style="text-shadow: 0 2px 16px rgba(0,0,0,0.5);">
+                <h3 class="mt-3.5 font-display text-2xl sm:text-3xl lg:text-[2.65rem] font-bold text-[#F5F7FC] tracking-tight leading-tight" style="text-shadow: 0 2px 16px rgba(0,0,0,0.5);">
                     Ready to give your story a global stage?
                 </h3>
 
-                <p class="mt-2.5 font-body text-xs sm:text-sm text-[#FAF6F0]/80 max-w-lg mx-auto">
+                <p class="mt-2.5 font-body text-xs sm:text-sm text-[#F5F7FC]/80 max-w-lg mx-auto">
                     Join the authors who choose to publish with confidence.
                 </p>
 
@@ -40,7 +40,7 @@ require_once __DIR__ . '/functions.php';
                     </a>
 
                     <a href="tel:<?= e(SITE_PHONE_RAW) ?>" class="footer-btn-phone">
-                        <svg class="w-4 h-4 text-[#C98E5E] shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+                        <svg class="w-4 h-4 text-[#2B35AF] shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
                         <span>(02) 8531 1364</span>
                     </a>
                 </div>
@@ -57,7 +57,7 @@ require_once __DIR__ . '/functions.php';
                             <img alt="Bindwell Press" width="165" height="40" decoding="async" class="object-contain brightness-110" style="height:40px; width:auto;" src="<?= asset_url('/assets/bindwell-logo-white.svg') ?>">
                         </a>
 
-                        <p class="font-body text-xs leading-relaxed text-[#FAF6F0]/80">
+                        <p class="font-body text-xs leading-relaxed text-[#F5F7FC]/80">
                             A premium book &amp; eBook cover design studio and full-service publisher. Award-winning covers that sell, plus editing, publishing, audiobook and marketing for authors worldwide.
                         </p>
 
@@ -80,8 +80,8 @@ require_once __DIR__ . '/functions.php';
 
                     <!-- Newsletter Subscribe Box -->
                     <div class="footer-newsletter-wrap">
-                        <div class="flex items-center gap-2 mb-2 font-body text-xs font-semibold text-[#EED3BE]">
-                            <span class="w-6 h-6 rounded-full flex items-center justify-center shrink-0" style="background: rgba(201, 142, 94, 0.25); color: #EED3BE; border: 1px solid rgba(220, 160, 105, 0.3);">
+                        <div class="flex items-center gap-2 mb-2 font-body text-xs font-semibold text-[#EDF2FF]">
+                            <span class="w-6 h-6 rounded-none flex items-center justify-center shrink-0" style="background: rgba(43, 53, 175, 0.25); color: #EDF2FF; border: 1px solid rgba(67, 97, 238, 0.3);">
                                 <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                             </span>
                             <span>Get publishing tips — Subscribe</span>
@@ -93,7 +93,7 @@ require_once __DIR__ . '/functions.php';
                                 <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                             </button>
                         </form>
-                        <span class="block mt-2 font-body text-[11px] text-[#FAF6F0]/55">Join a global community of authors.</span>
+                        <span class="block mt-2 font-body text-[11px] text-[#F5F7FC]/55">Join a global community of authors.</span>
                     </div>
                 </div>
 
@@ -105,10 +105,10 @@ require_once __DIR__ . '/functions.php';
                         <!-- Col 1: SERVICES -->
                         <div>
                             <div class="flex items-center gap-2 mb-3.5">
-                                <div class="w-6 h-6 rounded-full flex items-center justify-center shrink-0" style="background: rgba(201, 142, 94, 0.25); color: #EED3BE; border: 1px solid rgba(220, 160, 105, 0.3);">
+                                <div class="w-6 h-6 rounded-none flex items-center justify-center shrink-0" style="background: rgba(43, 53, 175, 0.25); color: #EDF2FF; border: 1px solid rgba(67, 97, 238, 0.3);">
                                     <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
                                 </div>
-                                <h4 class="font-syne text-[11px] font-bold uppercase tracking-[0.2em] text-[#EED3BE]">Services</h4>
+                                <h4 class="font-syne text-[11px] font-bold uppercase tracking-[0.2em] text-[#EDF2FF]">Services</h4>
                             </div>
 
                             <ul class="space-y-0.5">
@@ -126,10 +126,10 @@ require_once __DIR__ . '/functions.php';
                         <!-- Col 2: COMPANY -->
                         <div>
                             <div class="flex items-center gap-2 mb-3.5">
-                                <div class="w-6 h-6 rounded-full flex items-center justify-center shrink-0" style="background: rgba(201, 142, 94, 0.25); color: #EED3BE; border: 1px solid rgba(220, 160, 105, 0.3);">
+                                <div class="w-6 h-6 rounded-none flex items-center justify-center shrink-0" style="background: rgba(43, 53, 175, 0.25); color: #EDF2FF; border: 1px solid rgba(67, 97, 238, 0.3);">
                                     <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
                                 </div>
-                                <h4 class="font-syne text-[11px] font-bold uppercase tracking-[0.2em] text-[#EED3BE]">Company</h4>
+                                <h4 class="font-syne text-[11px] font-bold uppercase tracking-[0.2em] text-[#EDF2FF]">Company</h4>
                             </div>
 
                             <ul class="space-y-0.5">
@@ -144,10 +144,10 @@ require_once __DIR__ . '/functions.php';
                         <!-- Col 3: GET IN TOUCH -->
                         <div>
                             <div class="flex items-center gap-2 mb-3.5">
-                                <div class="w-6 h-6 rounded-full flex items-center justify-center shrink-0" style="background: rgba(201, 142, 94, 0.25); color: #EED3BE; border: 1px solid rgba(220, 160, 105, 0.3);">
+                                <div class="w-6 h-6 rounded-none flex items-center justify-center shrink-0" style="background: rgba(43, 53, 175, 0.25); color: #EDF2FF; border: 1px solid rgba(67, 97, 238, 0.3);">
                                     <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
                                 </div>
-                                <h4 class="font-syne text-[11px] font-bold uppercase tracking-[0.2em] text-[#EED3BE]">Get In Touch</h4>
+                                <h4 class="font-syne text-[11px] font-bold uppercase tracking-[0.2em] text-[#EDF2FF]">Get In Touch</h4>
                             </div>
 
                             <!-- Inner Dark Glass Card -->
@@ -158,8 +158,8 @@ require_once __DIR__ . '/functions.php';
                                         <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                                     </div>
                                     <div>
-                                        <span class="block font-syne text-[10px] font-bold uppercase tracking-wider text-[#FAF6F0]">Canberra Office</span>
-                                        <span class="block font-body text-[11.5px] text-[#FAF6F0]/80 leading-snug mt-0.5"><?= e(SITE_ADDRESS) ?></span>
+                                        <span class="block font-syne text-[10px] font-bold uppercase tracking-wider text-[#F5F7FC]">Canberra Office</span>
+                                        <span class="block font-body text-[11.5px] text-[#F5F7FC]/80 leading-snug mt-0.5"><?= e(SITE_ADDRESS) ?></span>
                                     </div>
                                 </div>
 
@@ -168,7 +168,7 @@ require_once __DIR__ . '/functions.php';
                                     <div class="footer-contact-icon">
                                         <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
                                     </div>
-                                    <span class="font-body text-xs font-semibold text-[#FAF6F0] group-hover:text-[#EED3BE] transition-colors"><?= e(SITE_PHONE) ?></span>
+                                    <span class="font-body text-xs font-semibold text-[#F5F7FC] group-hover:text-[#EDF2FF] transition-colors"><?= e(SITE_PHONE) ?></span>
                                 </a>
 
                                 <!-- Email -->
@@ -176,18 +176,18 @@ require_once __DIR__ . '/functions.php';
                                     <div class="footer-contact-icon">
                                         <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                                     </div>
-                                    <span class="font-body text-xs font-semibold text-[#FAF6F0] group-hover:text-[#EED3BE] transition-colors break-all"><?= e(SITE_EMAIL) ?></span>
+                                    <span class="font-body text-xs font-semibold text-[#F5F7FC] group-hover:text-[#EDF2FF] transition-colors break-all"><?= e(SITE_EMAIL) ?></span>
                                 </a>
                             </div>
 
                             <!-- Authors Worldwide Chip -->
                             <div class="footer-worldwide-box">
-                                <div class="w-7 h-7 rounded-full flex items-center justify-center shrink-0" style="background: rgba(201, 142, 94, 0.25); color: #EED3BE; border: 1px solid rgba(220, 160, 105, 0.3);">
+                                <div class="w-7 h-7 rounded-none flex items-center justify-center shrink-0" style="background: rgba(43, 53, 175, 0.25); color: #EDF2FF; border: 1px solid rgba(67, 97, 238, 0.3);">
                                     <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
                                 </div>
                                 <div>
-                                    <span class="block font-body text-xs font-semibold text-[#FAF6F0]/90 leading-tight">Authors Worldwide</span>
-                                    <span class="block font-body text-[10.5px] text-[#FAF6F0]/65">Always Welcome</span>
+                                    <span class="block font-body text-xs font-semibold text-[#F5F7FC]/90 leading-tight">Authors Worldwide</span>
+                                    <span class="block font-body text-[10.5px] text-[#F5F7FC]/65">Always Welcome</span>
                                 </div>
                             </div>
 
@@ -202,20 +202,20 @@ require_once __DIR__ . '/functions.php';
             <div class="footer-subfooter-pill">
                 <div class="flex items-center gap-3">
                     <!-- Leaf / Quill Icon -->
-                    <svg class="w-5 h-5 text-[#C98E5E] shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                    <svg class="w-5 h-5 text-[#2B35AF] shrink-0" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/>
                     </svg>
-                    <p class="font-body text-xs text-[#FAF6F0]/80 text-center sm:text-left">
+                    <p class="font-body text-xs text-[#F5F7FC]/80 text-center sm:text-left">
                         &copy; 2025 Bindwell Press. All rights reserved. Authors keep 100% of their rights to royalties.
                     </p>
                 </div>
 
-                <div class="flex items-center gap-4 font-body text-xs text-[#FAF6F0]/70">
-                    <a href="#privacy" class="hover:text-[#EED3BE] transition-colors">Privacy</a>
-                    <span class="text-[#C98E5E]/40">|</span>
-                    <a href="#terms" class="hover:text-[#EED3BE] transition-colors">Terms</a>
-                    <span class="text-[#C98E5E]/40">|</span>
-                    <a href="#sitemap" class="hover:text-[#EED3BE] transition-colors">Sitemap</a>
+                <div class="flex items-center gap-4 font-body text-xs text-[#F5F7FC]/70">
+                    <a href="#privacy" class="hover:text-[#EDF2FF] transition-colors">Privacy</a>
+                    <span class="text-[#2B35AF]/40">|</span>
+                    <a href="#terms" class="hover:text-[#EDF2FF] transition-colors">Terms</a>
+                    <span class="text-[#2B35AF]/40">|</span>
+                    <a href="#sitemap" class="hover:text-[#EDF2FF] transition-colors">Sitemap</a>
                 </div>
             </div>
 

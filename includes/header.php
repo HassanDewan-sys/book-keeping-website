@@ -41,7 +41,7 @@ enforce_anti_scraper_shield();
     <link rel="stylesheet" href="<?= asset_url('/assets/css/style.css') ?>">
     <link rel="stylesheet" href="<?= asset_url('/assets/css/interactions.css') ?>">
 </head>
-<body class="bg-cream font-body text-ink antialiased">
+<body class="bg-[#F5F7FC] font-body text-[#17233D] antialiased">
     <!-- Top Global Scroll Progress Bar -->
     <div id="scroll-progress" class="scroll-progress-bar" style="transform: scaleX(0);"></div>
 

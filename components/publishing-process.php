@@ -26,27 +26,27 @@ $steps = $process_data['steps'];
         <div class="max-w-3xl mx-auto text-center">
             <!-- Subheading Pill -->
             <div class="reveal-init flex items-center justify-center">
-                <span class="eyebrow inline-flex items-center" style="background: rgba(201, 142, 94, 0.09) !important; border: 1px solid rgba(201, 142, 94, 0.38) !important;">Six Steps. Zero Guesswork.</span>
+                <span class="eyebrow inline-flex items-center" style="background: rgba(43, 53, 175, 0.09) !important; border: 1px solid rgba(43, 53, 175, 0.38) !important;">Six Steps. Zero Guesswork.</span>
             </div>
 
             <!-- Main Heading -->
             <div class="reveal-init delay-100 mt-4">
-                <h2 class="font-display text-3xl font-extrabold leading-[1.12] tracking-tight text-[#14070D] sm:text-4xl lg:text-5xl">
+                <h2 class="font-display text-3xl font-extrabold leading-[1.12] tracking-tight text-[#12086F] sm:text-4xl lg:text-5xl">
                     How We Publish <span class="steps-title-gold">Your Book</span>
                 </h2>
             </div>
 
             <div class="mx-auto mt-5 flex items-center justify-center gap-2.5">
-                <span class="h-[3px] w-8 rounded-full bg-gradient-to-r from-transparent to-gold"></span>
-                <span class="h-2.5 w-2.5 -skew-x-12 rounded-[3px] bg-gold-gradient shadow-gold"></span>
-                <span class="h-[3px] w-16 rounded-full bg-gold-gradient"></span>
-                <span class="h-2.5 w-2.5 -skew-x-12 rounded-[3px] bg-gold-gradient shadow-gold"></span>
-                <span class="h-[3px] w-8 rounded-full bg-gradient-to-l from-transparent to-gold"></span>
+                <span class="h-[3px] w-8 rounded-none bg-gradient-to-r from-transparent to-[#2B35AF]"></span>
+                <span class="h-2.5 w-2.5 -skew-x-12 rounded-none bg-gold-gradient shadow-none"></span>
+                <span class="h-[3px] w-16 rounded-none bg-gold-gradient"></span>
+                <span class="h-2.5 w-2.5 -skew-x-12 rounded-none bg-gold-gradient shadow-none"></span>
+                <span class="h-[3px] w-8 rounded-none bg-gradient-to-l from-transparent to-[#2B35AF]"></span>
             </div>
 
             <!-- Subtitle Description -->
             <div class="reveal-init delay-200">
-                <p class="mt-3 font-body text-sm sm:text-base leading-relaxed mx-auto max-w-2xl text-[#551E3C]/80">
+                <p class="mt-3 font-body text-sm sm:text-base leading-relaxed mx-auto max-w-2xl text-[#526079]/80">
                     A clear, collaborative path that turns your manuscript into a published,<br class="hidden sm:inline"> best-selling book, with you in control at every step.
                 </p>
             </div>
